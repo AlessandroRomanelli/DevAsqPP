@@ -1,0 +1,11 @@
+.container {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+	transition: 0.2s ease-in-out;
+	border-radius: 50%;
+}
