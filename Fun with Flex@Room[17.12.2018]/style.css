@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.container div {
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-bottom: 1em;
+}
+
+.container div:nth-child(2n) {
+	background: pink;
+	width: 200px;
+}
+
+.container div:nth-child(3n) {
+	background: blue;
+}
