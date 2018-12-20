@@ -3,7 +3,7 @@ const colors = [
 ];
 
 let wishes = [
-	'Merry Christmas!', 'Fröhliche Weichnacht!', 'Joyeux Noël!', 'Feliz Navidad!', 'Buon Natale!'
+	'Merry Christmas!', 'Froehliche Weichnacht!', 'Joyeux Noe!', 'Feliz Navidad!', 'Buon Natale!'
 ];
 
 let used = [];
@@ -18,7 +18,7 @@ setInterval(() => {
 	used.push(wishes[index]);
 	const text = wishes.splice(index, 1);
 	const wish = document.querySelector('.merry-christmas h1').innerHTML = text;
-}, 1000);
+}, 2500);
 
 const TWO_PI = Math.PI * 2;
 
