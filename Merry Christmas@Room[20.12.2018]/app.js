@@ -2,6 +2,24 @@ const colors = [
   '#4a0206','#710006','#bb0d1a','#fa6632','#cf0638','#ef3e4d','#fdbbc1'
 ];
 
+let wishes = [
+	'Merry Christmas!', 'Fröhliche Weichnacht!', 'Joyeux Noël!', 'Feliz Navidad!', 'Buon Natale!'
+];
+
+let used = [];
+
+setInterval(() => {
+	if (wishes.length === 0) {
+		wishes = used;
+		used = [];
+		console.log('New rotation!')
+	}
+	const index = Math.floor(Math.random()*wishes.length);
+	used.push(wishes[index]);
+	const text = wishes.splice(index, 1);
+	const wish = document.querySelector('.merry-christmas h1').innerHTML = text;
+}, 1000);
+
 const TWO_PI = Math.PI * 2;
 
 function lerp(value, min, max) {
